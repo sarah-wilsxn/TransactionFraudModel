@@ -208,10 +208,10 @@ metrics(y_test, prob_test > f1_opt_t)
 
 test_metrics: t=opt
 
-F1: 0.6201022146507666
-Precision: 0.5634674922600619
-Recall: 0.6893939393939394
-Conf Matrix: [[21498   282]
+F1: 0.6201022146507666 \
+Precision: 0.5634674922600619 \
+Recall: 0.6893939393939394 \
+Conf Matrix: [[21498   282] \
  [  164   364]]
 
 ```
@@ -221,10 +221,10 @@ metrics(y_test, prob_test > 0.5)
 
 test metrics: t=0.5
 
-F1: 0.539109506618532
-Precision: 0.7392739273927392
-Recall: 0.42424242424242425
-Conf Matrix: [[21701    79]
+F1: 0.539109506618532 \
+Precision: 0.7392739273927392 \
+Recall: 0.42424242424242425 \
+Conf Matrix: [[21701    79] \
  [  304   224]]
  
 # Feature importances
@@ -289,10 +289,10 @@ metrics(y_test, prob_test >= rev_opt_t)
 
 test_metrics: t=rev_opt_t
 
-F1: 0.385502471169687
-Precision: 0.2463157894736842
-Recall: 0.8863636363636364
-Conf Matrix: [[20348  1432]
+F1: 0.385502471169687 \
+Precision: 0.2463157894736842 \
+Recall: 0.8863636363636364 \
+Conf Matrix: [[20348  1432] \
  [   60   468]]
 
 ### Plotting Revenue and F1 as a function of threshold
@@ -348,10 +348,10 @@ metrics(y_test, prob_test_rev_aware >= rev_opt_t)
 
 test_metrics: t=rev_opt_t
 
-F1: 0.3369527145359019
-Precision: 0.20670391061452514
-Recall: 0.9109848484848485
-Conf Matrix: [[19934  1846]
+F1: 0.3369527145359019 \
+Precision: 0.20670391061452514 \
+Recall: 0.9109848484848485 \
+Conf Matrix: [[19934  1846] \
  [   47   481]]
 
 # Use conservative model on large transactions
@@ -375,10 +375,10 @@ mix_pred = high_value_filter(
 metrics(y_test, mix_pred)
 ```
 
-F1: 0.5656716417910448
-Precision: 0.4667487684729064
-Recall: 0.7178030303030303
-Conf Matrix: [[21347   433]
+F1: 0.5656716417910448 \
+Precision: 0.4667487684729064 \
+Recall: 0.7178030303030303 \
+Conf Matrix: [[21347   433] \
  [  149   379]]
  
 ```
